@@ -6,10 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        type = "text/javascript"
-        src = "script.js"
-    </script>
 </head>
 
 <form>
@@ -27,6 +23,18 @@
     <br>
     <button type="button" id="berechnen">BMI berechnen</button>
 </form>
+<script>
+    document.querySelector('#berechnen').addEventListener('click', berechne_BMI);
+
+    function berechne_BMI() {
+        var groesse = parseInt(document.getElementById("groesse").value),
+            masse = parseInt(document.getElementById("masse").value),
+            bmi = Math.round(100000 * masse / (groesse * groesse)) / 10;
+
+        document.querySelector("output").textContent = bmi;
+        document.write("Hello");
+    }
+</script>
 </body>
 
 </html>
