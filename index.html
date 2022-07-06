@@ -6,14 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        type = "text/javascript"
+        src = "script.js"
+    </script>
 </head>
 
-<body>
-    <form action="https://wiki.selfhtml.org/wiki/Spezial%3ASuche">
-        <label for="suche">Suchbegriff: </label>
-        <input type="search" id="suche" name="search">
-        <button name="fulltext" value="1">Finden</button>
-    </form>
+<form>
+    <label for="groesse">Größe: 
+      <input id="groesse" type="number" min="100" max="220" step="1" value="175">
+    cm</label>
+    <br>
+    <label for="masse">Masse: 
+      <input id="masse" type="number" min="30" max="225" step="0.1" value="75">
+    kg</label>
+    <br>
+    <label>BMI:
+      <output id="bmi"></output>
+    </label>
+    <br>
+    <button type="button" id="berechnen">BMI berechnen</button>
+</form>
 </body>
 
 </html>
