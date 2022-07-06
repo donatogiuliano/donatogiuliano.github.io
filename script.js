@@ -6,4 +6,5 @@ function berechne_BMI() {
         bmi = Math.round(100000 * masse / (groesse * groesse)) / 10;
 
     document.querySelector("output").textContent = bmi;
+    document.write("Hello");
 }
